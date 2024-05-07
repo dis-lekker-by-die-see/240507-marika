@@ -23,6 +23,7 @@ body {
     /*position: relative; /* Allows absolute positioning inside the wrapper */
     display: flex;
     justify-content: flex-end;
+    
     align-items: center;
 
     /*overflow: auto;
@@ -45,6 +46,7 @@ body {
 
 
 #content {
+    margin-top: 5%;
     display: flex; /* Turns #content into a flex container */
     flex-direction: column; /* Stacks the children vertically */
     align-items: center; /* Aligns children (form elements) in the center */
@@ -110,6 +112,25 @@ p {
     overflow: hidden;
 }
 
+
+#statusBar {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space out scoreboard and progress bar */
+    width: 100%; /* Ensure the container spans the full width of its parent */
+    padding: 10px 0; /* Padding for visual comfort */
+}
+
+#progressBar {
+    padding-left: 1%;
+    padding-top: 1%;
+    flex-grow: 1; /* Allows the progress bar to take up available space */
+    text-align: left; /* Aligns the text or contents to the left */
+}
+
+#scoreBoard {
+    flex-grow: 1; /* Allows the score board to take up available space */
+    text-align: right; /* Aligns the text or contents to the right */
+}
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 750px) {
