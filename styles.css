@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex; /* Establishes a flex container */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    height: 90vh; /* 100vh      Full viewport height */
+    background-color: #f0f0f0;
+    /*margin: 0;
+    /*padding: 10px; /* Adds padding around the content to prevent touching the edges */
+}
+
+#content {
+    display: flex; /* Turns #content into a flex container */
+    flex-direction: column; /* Stacks the children vertically */
+    align-items: center; /* Aligns children (form elements) in the center */
+    text-align: center;
+    background-color: white;
+    /*padding: 20px;
+    */
+    display: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 360px; /* Maximum width of the container */
+    width: 100%; /* Makes the width responsive */
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 3em; /* Responsive font size */
+}
+
+input, button {
+    font-family: "Teachers", sans-serif;
+    font-style: normal;
+    box-sizing: border-box; /* Includes padding and border in the element's width and height */
+    width: 100%; /* Ensures full width of the parent container */
+    padding: 12px;
+    
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.75em; /* Responsive font size */
+}
+
+input {
+    text-align: center; /* Center text inside the input box */
+    margin-bottom: 10px; /* Space between form elements */
+    font-size: 2.6em; /* Responsive font size */
+    font-weight: 500;
+
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    /*color: #28a745;
+    */
+    font-family: "Teachers", sans-serif;
+    font-style: normal;
+    font-size: 3.75em; /* Responsive font size */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    height: 80px; /* Reserves space */
+    overflow: hidden;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Smaller font size on small devices */
+    }
+
+    input {
+        font-size: 1.3em; /* Slightly smaller font size on small devices */
+    }
+    
+    button {
+        font-size: 1.0em; /* Slightly smaller font size on small devices */
+    }
+
+    p {
+        font-size: 1.75em;
+    }
+
+}
