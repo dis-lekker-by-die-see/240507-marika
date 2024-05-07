@@ -1,5 +1,4 @@
 
-
 const hiragana = {'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おにぎり': 'onigiri', 'かさ': 'kasa', 'きつね': 'kitsune', 'くま': 'kuma', 'けいたい': 'keitai', 'こねこ': 'koneko', 'さかな': 'sakana', 'しまうま': 'shimauma', 'すし': 'sushi', 'せんべい': 'senbei', 'そら': 'sora', 'たまご': 'tamago', 'ちず': 'chizu', 'つき': 'tsuki', 'てがみ': 'tegami', 'とんぼ': 'tonbo', 'なし': 'nashi', 'にわとり': 'niwatori', 'ぬいぐるみ': 'nuigurumi', 'ねっこ': 'nekko', 'のり': 'nori', 'はな': 'hana', 'ひつじ': 'hitsuji', 'ふね': 'fune', 'へび': 'hebi', 'ほし': 'hoshi', 'まど': 'mado', 'みかん': 'mikan', 'むし': 'mushi', 'めがね': 'megane', 'もも': 'momo', 'やま': 'yama', 'ゆき': 'yuki', 'よる': 'yoru', 'らっぱ': 'rappa', 'りんご': 'ringo', 'るすばん': 'rusuban', 'れっしゃ': 'ressha', 'ろうそく': 'rousoku', 'わに': 'wani', 'がっこう': 'gakkou', 'ぎんこう': 'ginkou', 'ぐみ': 'gumi', 'げんかん': 'genkan', 'ごはん': 'gohan', 'ざっし': 'zasshi', 'じてんしゃ': 'jitensha', 'ずぼん': 'zubon', 'ぜんぶ': 'zenbu', 'ぞう': 'zou', 'だいこん': 'daikon', 'ちから': 'chikara', 'づつみ': 'dutsumi', 'でんしゃ': 'densha', 'どうぐ': 'dougu', 'ばんごう': 'bangou', 'びじん': 'bijin', 'ぶた': 'buta', 'べんとう': 'bentou', 'ぼうし': 'boushi', 'ぱん': 'pan', 'ぴあの': 'piano', 'ぷりぷり': 'puripuri', 'ぺん': 'pen', 'ぽんかん': 'ponkan', 'きゃく': 'kyaku', 'きゅうり': 'kyuuri', 'きょうかしょ': 'kyoukasho', 'しゃしん': 'shashin', 'しゅくだい': 'shukudai', 'しょうがっこう': 'shougakkou', 'ちゃわん': 'chawan', 'ちゅうい': 'chuui', 'ちょうさ': 'chousa', 'にゃんこ': 'nyanko', 'にゅうがく': 'nyuugaku', 'にょうぼう': 'nyoubou', 'ひゃく': 'hyaku', 'ひゅうが': 'hyuuga', 'ひょうげん': 'hyougen', 'みゃくはく': 'myakuhaku', 'みゅうみゅう': 'myuumyuu', 'みょうじ': 'myouji', 'りゃん': 'ryan', 'りゅう': 'ryuu', 'りょうり': 'ryouri', 'ぎゃく': 'gyaku', 'ぎゅうにゅう': 'gyuunyuu', 'ぎょうざ': 'gyouza', 'じゃがいも': 'jagaimo', 'じゅうしょ': 'juusho', 'じょうず': 'jouzu', 'びゃっこ': 'byakko', 'びゅうびゅう': 'byuubyuu', 'びょういん': 'byouin', 'ぴゃんぴゃん': 'pyanpyan', 'ぴゅうと': 'pyuuto', 'ぴょんぴょん': 'pyonpyon'};
 
 /*const hiragana = {
@@ -7,18 +6,29 @@ const hiragana = {'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴ�
 };
 */
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const correctPassword = '1234';  
+    let enteredPassword = prompt('Password > ');
+
+    if (enteredPassword !== correctPassword) {
+        // alert('Incorrect password, access denied.');  // Optionally, you can redirect them or hide content
+        //document.body.innerHTML = '<h1>Access Denied</h1>';
+        window.location.reload(); // Reload the entire page
+    } else {
+        document.getElementById('wrapper').style.display = 'flex'; // Only display the wrapper if the password is correct
+        setupGame(); // Only run setup if the password is correct
+    }
+});
+
 let newRandomList = [];
-let originalListLength;  // We'll use this to keep track of the original number of words
+let originalListLength;
 let wrongCount = 0;
 let currentWord = '';
 
-document.addEventListener('DOMContentLoaded', function() {
-    setupGame();
-});
-
 function setupGame() {
     newRandomList = shuffle(Object.keys(hiragana));
-    originalListLength = newRandomList.length;  // Set the original list length
+    originalListLength = newRandomList.length;
     displayNextWord();
     setupEnterKeySubmit();
 }
@@ -33,19 +43,19 @@ function shuffle(array) {
 
 function displayNextWord() {
     if (newRandomList.length === 0) {
-        alert('全部できた！！\n \n もう一回');
+        alert('全部できた！！\n \nもう一回');
         window.location.reload(); // Reload the entire page
         return;
-    }    
+    }
     currentWord = newRandomList.shift();
     document.getElementById('hiraganaWord').textContent = currentWord;
     document.getElementById('userInput').value = '';
     document.getElementById('userInput').focus();
-    correctReading = hiragana[currentWord];
     wrongCount = 0;
     updateScoreBoard();
     updateProgress();
 }
+
 
 function checkAnswer() {
     const userInput = document.getElementById('userInput').value.trim().toLowerCase();
