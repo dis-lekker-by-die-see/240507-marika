@@ -1,8 +1,210 @@
-{'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おにぎり': 'onigiri', 'かさ': 'kasa', 'きつね': 'kitsune', 'くま': 'kuma', 'けいたい': 'keitai', 'こねこ': 'koneko', 'さかな': 'sakana', 'しまうま': 'shimauma', 'すし': 'sushi', 'せんべい': 'senbei', 'そら': 'sora', 'たまご': 'tamago', 'ちず': 'chizu', 'つき': 'tsuki', 'てがみ': 'tegami', 'とんぼ': 'tonbo', 'なし': 'nashi', 'にわとり': 'niwatori', 'ぬいぐるみ': 'nuigurumi', 'ねっこ': 'nekko', 'のり': 'nori', 'はな': 'hana', 'ひつじ': 'hitsuji', 'ふね': 'fune', 'へび': 'hebi', 'ほし': 'hoshi', 'まど': 'mado', 'みかん': 'mikan', 'むし': 'mushi', 'めがね': 'megane', 'もも': 'momo', 'やま': 'yama', 'ゆき': 'yuki', 'よる': 'yoru', 'らっぱ': 'rappa', 'りんご': 'ringo', 'るすばん': 'rusuban', 'れっしゃ': 'ressha', 'ろうそく': 'rousoku', 'わに': 'wani', 'がっこう': 'gakkou', 'ぎんこう': 'ginkou', 'ぐみ': 'gumi', 'げんかん': 'genkan', 'ごはん': 'gohan', 'ざっし': 'zasshi', 'じてんしゃ': 'jitensha', 'ずぼん': 'zubon', 'ぜんぶ': 'zenbu', 'ぞう': 'zou', 'だいこん': 'daikon', 'ちから': 'chikara', 'づつみ': 'dutsumi', 'でんしゃ': 'densha', 'どうぐ': 'dougu', 'ばんご': 'bango', 'びじん': 'bijin', 'ぶた': 'buta', 'べんとう': 'bentou', 'ぼうし': 'boushi', 'ぱん': 'pan', 'ぴあの': 'piano', 'ぷりぷり': 'puripuri', 'ぺん': 'pen', 'ぽんかん': 'ponkan', 'きゃく': 'kyaku', 'きゅうり': 'kyuuri', 'きょうかしょ': 'kyoukasho', 'しゃしん': 'shashin', 'しゅくだい': 'shukudai', 'しょうがっこう': 'shougakkou', 'ちゃわん': 'chawan', 'ちゅうい': 'chuui', 'ちょうさ': 'chousa', 'にゃんこ': 'nyanko', 'にゅうがく': 'nyuugaku', 'にょうぼう': 'nyoubou', 'ひゃく': 'hyaku', 'ひゅうが': 'hyuuga', 'ひょうげん': 'hyougen', 'みゃくはく': 'myakuhaku', 'みゅうみゅう': 'myuumyuu', 'みょうじ': 'myouji', 'りゃん': 'ryan', 'りゅう': 'ryuu', 'りょうり': 'ryouri', 'ぎゃく': 'gyaku', 'ぎゅうにゅう': 'gyuunyuu', 'ぎょうざ': 'gyouza', 'じゃがいも': 'jagaimo', 'じゅうしょ': 'juusho', 'じょうず': 'jouzu', 'びゃっこ': 'byakko', 'びゅうびゅう': 'byuubyuu', 'びょういん': 'byouin', 'ぴゃんぴゃん': 'pyanpyan', 'ぴゅうと': 'pyuuto', 'ぴょんぴょん': 'pyonpyon'};
+
+
+{'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おにぎり': 'onigiri', 'かさ': 'kasa', 'きつね': 'kitsune', 'くま': 'kuma', 'けいたい': 'keitai', 'こねこ': 'koneko', 'さかな': 'sakana', 'しまうま': 'shimauma', 'すし': 'sushi', 'せんべい': 'senbei', 'そら': 'sora', 'たまご': 'tamago', 'ちず': 'chizu', 'つき': 'tsuki', 'てがみ': 'tegami', 'とんぼ': 'tonbo', 'なし': 'nashi', 'にわとり': 'niwatori', 'ぬいぐるみ': 'nuigurumi', 'ねこ': 'neko', 'のり': 'nori', 'はな': 'hana', 'ひつじ': 'hitsuji', 'ふね': 'fune', 'へび': 'hebi', 'ほし': 'hoshi', 'まど': 'mado', 'みかん': 'mikan', 'むし': 'mushi', 'めがね': 'megane', 'もも': 'momo', 'やま': 'yama', 'ゆき': 'yuki', 'よる': 'yoru', 'らっぱ': 'rappa', 'りんご': 'ringo', 'るすばん': 'rusuban', 'れいぞうこ': 'reizouko', 'ろうそく': 'rousoku', 'わに': 'wani', 'がっこう': 'gakkou', 'ぎんこう': 'ginkou', 'ぐみ': 'gumi', 'げんかん': 'genkan', 'ごはん': 'gohan', 'ざっし': 'zasshi', 'じてんしゃ': 'jitensha', 'ずぼん': 'zubon', 'ぜんぶ': 'zenbu', 'ぞう': 'zou', 'だいこん': 'daikon', 'ぢから': 'chikara', 'づつみ': 'dutsumi', 'でんしゃ': 'densha', 'どうぐ': 'dougu', 'ばんご': 'bango', 'びじん': 'bijin', 'ぶた': 'buta', 'べんとう': 'bentou', 'ぼうし': 'boushi', 'ぱん': 'pan', 'ぴあの': 'piano', 'ぷりぷり': 'puripuri', 'ぺん': 'pen', 'ぽんかん': 'ponkan', 'きゃく': 'kyaku', 'きゅうり': 'kyuuri', 'きょうかしょ': 'kyoukasho', 'しゃしん': 'shashin', 'しゅくだい': 'shukudai', 'しょうがっこう': 'shougakkou', 'ちゃわん': 'chawan', 'ちゅうい': 'chuui', 'ちょうさ': 'chousa', 'にゃんこ': 'nyanko', 'にゅうがく': 'nyuugaku', 'にょうぼう': 'nyoubou', 'ひゃく': 'hyaku', 'ひゅうが': 'hyuuga', 'ひょうげん': 'hyougen', 'みゃくはく': 'myakuhaku', 'みゅうみゅう': 'myuumyuu', 'みょうじ': 'myouji', 'りゃん': 'ryan', 'りゅう': 'ryuu', 'りょうり': 'ryouri', 'ぎゃく': 'gyaku', 'ぎゅうにゅう': 'gyuunyuu', 'ぎょうざ': 'gyouza', 'じゃがいも': 'jagaimo', 'じゅうしょ': 'juusho', 'じょうず': 'jouzu', 'ぢゃ': 'ja', 'ぢゅ': 'ju', 'ぢょ': 'jo', 'びゃっこ': 'byakko', 'びゅうびゅう': 'byuubyuu', 'びょういん': 'byouin', 'ぴゃんぴゃん': 'pyanpyan', 'ぴゅうと': 'pyuuto', 'ぴょんぴょん': 'pyonpyon'};
+
 
 
 change the html and javascript to include the following:
-1: add a count for how mnay times a word is answered incorrectly. after 3 incorrect tries show the answer.
-2: add a score in the bottom right corner below the button. 1 incorrect = 
-1: instead of selecting a random hiragana word in perpetuity, create a new random list from the hiragana = {} list. the list should shorten as the each item is answered correctly. 
-1: a small emoji progress bar below the button. calculate a 
+1: add a count (wrongCount) for how many times a word is answered incorrectly. after 3 incorrect tries show the answer.
+2: add a score board in the bottom right corner below the button. Use wrongCount as the score. wrongCount = 0 displays nothing, wrongCount = 1 displays ⛔, wrongCount = 2 displays ⛔⛔. this is so that the user knows how many tries they have left until the answer is shown. reset wrongCount to 0 when showing a new word.
+3: instead of selecting a random hiragana word in perpetuity, create a new list (newRandomList) randomly ordered from the hiragana = {} list. the list should shorten as the each item is answered correctly. if a word is answered incorrectly once before it is answered correctly, the word is not removed from the list (like it would be if it was answered correctly the first time), but moved 9 places down from the top. if a word is answered incorrectly twice before it is answered correctly, the word is not removed from the list, but moved 6 places down from the top. if a word is answered incorrectly three times, the word is not removed from the list, but moved 3 places from the top. if there are less words in the list than 9, 6, or 3, the word is moved to the end of the list.
+4: add a small emoji or text progress bar below the button. the total is 100% (totalWords = the length of the hiragana list). it is calculated by (newRandomList/totalWords) * 100. 
+
+
+HTML =======================================
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Hiragana Reading Practice</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <img src="210623-cropped.png" alt="Marika" id="bg-image" />
+        <div id="content">
+            <h1 id="hiraganaWord"></h1>
+            <p id="result"></p>
+            <input type="text" id="userInput" placeholder="abc">
+            <button onclick="checkAnswer()">Check Answer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+JS =======================================
+
+
+const hiragana = {'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おにぎり': 'onigiri', 'かさ': 'kasa', 'きつね': 'kitsune', 'くま': 'kuma', 'けいたい': 'keitai', 'こねこ': 'koneko', 'さかな': 'sakana', 'しまうま': 'shimauma', 'すし': 'sushi', 'せんべい': 'senbei', 'そら': 'sora', 'たまご': 'tamago', 'ちず': 'chizu', 'つき': 'tsuki', 'てがみ': 'tegami', 'とんぼ': 'tonbo', 'なし': 'nashi', 'にわとり': 'niwatori', 'ぬいぐるみ': 'nuigurumi', 'ねっこ': 'nekko', 'のり': 'nori', 'はな': 'hana', 'ひつじ': 'hitsuji', 'ふね': 'fune', 'へび': 'hebi', 'ほし': 'hoshi', 'まど': 'mado', 'みかん': 'mikan', 'むし': 'mushi', 'めがね': 'megane', 'もも': 'momo', 'やま': 'yama', 'ゆき': 'yuki', 'よる': 'yoru', 'らっぱ': 'rappa', 'りんご': 'ringo', 'るすばん': 'rusuban', 'れっしゃ': 'ressha', 'ろうそく': 'rousoku', 'わに': 'wani', 'がっこう': 'gakkou', 'ぎんこう': 'ginkou', 'ぐみ': 'gumi', 'げんかん': 'genkan', 'ごはん': 'gohan', 'ざっし': 'zasshi', 'じてんしゃ': 'jitensha', 'ずぼん': 'zubon', 'ぜんぶ': 'zenbu', 'ぞう': 'zou', 'だいこん': 'daikon', 'ちから': 'chikara', 'づつみ': 'dutsumi', 'でんしゃ': 'densha', 'どうぐ': 'dougu', 'ばんご': 'bango', 'びじん': 'bijin', 'ぶた': 'buta', 'べんとう': 'bentou', 'ぼうし': 'boushi', 'ぱん': 'pan', 'ぴあの': 'piano', 'ぷりぷり': 'puripuri', 'ぺん': 'pen', 'ぽんかん': 'ponkan', 'きゃく': 'kyaku', 'きゅうり': 'kyuuri', 'きょうかしょ': 'kyoukasho', 'しゃしん': 'shashin', 'しゅくだい': 'shukudai', 'しょうがっこう': 'shougakkou', 'ちゃわん': 'chawan', 'ちゅうい': 'chuui', 'ちょうさ': 'chousa', 'にゃんこ': 'nyanko', 'にゅうがく': 'nyuugaku', 'にょうぼう': 'nyoubou', 'ひゃく': 'hyaku', 'ひゅうが': 'hyuuga', 'ひょうげん': 'hyougen', 'みゃくはく': 'myakuhaku', 'みゅうみゅう': 'myuumyuu', 'みょうじ': 'myouji', 'りゃん': 'ryan', 'りゅう': 'ryuu', 'りょうり': 'ryouri', 'ぎゃく': 'gyaku', 'ぎゅうにゅう': 'gyuunyuu', 'ぎょうざ': 'gyouza', 'じゃがいも': 'jagaimo', 'じゅうしょ': 'juusho', 'じょうず': 'jouzu', 'びゃっこ': 'byakko', 'びゅうびゅう': 'byuubyuu', 'びょういん': 'byouin', 'ぴゃんぴゃん': 'pyanpyan', 'ぴゅうと': 'pyuuto', 'ぴょんぴょん': 'pyonpyon'};
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    displayRandomWord();
+    setupEnterKeySubmit();
+});
+
+
+function displayRandomWord() {
+    const keys = Object.keys(hiragana);
+    const randomWord = keys[Math.floor(Math.random() * keys.length)];
+    document.getElementById('hiraganaWord').textContent = randomWord;
+    document.getElementById('userInput').setAttribute('data-reading', hiragana[randomWord]);
+    document.getElementById('userInput').value = ''; // Ensure input is cleared when a new word is displayed
+    document.getElementById('userInput').focus(); // Focus on input for a new entry
+}
+
+function checkAnswer() {
+    const userInput = document.getElementById('userInput').value.trim().toLowerCase();
+    const correctReading = document.getElementById('userInput').getAttribute('data-reading');
+    const resultElement = document.getElementById('result');
+    
+    document.getElementById('userInput').value = ''; // Clear input regardless of the result
+
+    if (userInput === correctReading) {
+
+        //resultElement.textContent = '🟢'; 
+        
+        resultElement.textContent = correctReading;
+        resultElement.style.color = 'black';
+        
+        resultElement.style.visibility = 'visible';
+        resultElement.style.opacity = '1';
+        setTimeout(() => {
+            resultElement.style.opacity = '0';
+            resultElement.style.visibility = 'hidden';
+            displayRandomWord(); // Display next word after message disappears
+        }, 3000); // Message will fade out and hide after 1.5 seconds
+    } else {
+        resultElement.textContent = '⛔';
+        resultElement.style.color = 'red';
+        resultElement.style.visibility = 'visible';
+        resultElement.style.opacity = '1';
+        setTimeout(() => {
+            resultElement.style.opacity = '0';
+            resultElement.style.visibility = 'hidden';
+        }, 2400); // Keep the same word and allow another attempt
+    }
+}
+
+function setupEnterKeySubmit() {
+    const input = document.getElementById('userInput');
+    input.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent any default behavior
+            checkAnswer();
+        }
+    });
+}
+
+
+
+
+
+
+this javascript does not work exactly as desired. The following is wrong
+1: more than two ⛔ is displayed when the wrong answer is given repeatedly. only two ⛔ is necessary. this in turn affects the progress %. wrongCount and scoreboard cannot be higher than 3.
+2: the new random list of words contain only one word of each. when a wrong answer is given, that word is moved further down the list so that it can be reviewed again (it should not be duplicated). In other words, it's like the top card of a deck of cards is moved a few cards down. one wrong answer = 9 cards down. two wrong answers = 6 cards down. three wrong answers = 3 cards down. 
+
+
+
+
+
+const hiragana = {'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おにぎり': 'onigiri'};
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    setupGame();
+});
+
+
+
+let newRandomList = [];
+let wrongCount = 0;
+let currentWord = '';
+
+function setupGame() {
+    newRandomList = shuffle(Object.keys(hiragana)); // Shuffle keys
+    displayNextWord();
+    setupEnterKeySubmit();
+}
+
+function shuffle(array) {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+}
+
+function displayNextWord() {
+    if (newRandomList.length === 0) {
+        alert('All words completed!');
+        return;
+    }
+    currentWord = newRandomList[0];
+    document.getElementById('hiraganaWord').textContent = currentWord;
+    document.getElementById('userInput').value = '';
+    document.getElementById('userInput').focus();
+    wrongCount = 0; // Reset wrong count
+    updateScoreBoard();
+    updateProgress();
+}
+
+function checkAnswer() {
+    const userInput = document.getElementById('userInput').value.trim().toLowerCase();
+    const correctReading = hiragana[currentWord];
+    
+    if (userInput === correctReading) {
+        newRandomList.shift(); // Remove the word from the list
+        displayNextWord();
+    } else {
+        wrongCount++;
+        updateScoreBoard();
+        if (wrongCount >= 3) {
+            document.getElementById('result').textContent = `Correct answer: ${correctReading}`;
+            setTimeout(() => {
+                newRandomList.splice(3, 0, currentWord); // Move word three places down or to the end if the list is too short
+                displayNextWord();
+            }, 2400);
+        }
+    }
+}
+
+function updateScoreBoard() {
+    let scoreboard = '';
+    for (let i = 0; i < wrongCount; i++) {
+        scoreboard += '⛔';
+    }
+    document.getElementById('scoreBoard').innerHTML = scoreboard;
+}
+
+function updateProgress() {
+    const progressPercent = ((Object.keys(hiragana).length - newRandomList.length) / Object.keys(hiragana).length) * 100;
+    document.getElementById('progressBar').textContent = `Progress: ${progressPercent.toFixed(2)}%`;
+}
+
+function setupEnterKeySubmit() {
+    const input = document.getElementById('userInput');
+    input.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent default form submission
+            checkAnswer();
+        }
+    });
+}
+
