@@ -7,7 +7,7 @@ const katakana = {'ヴァ': 'va', 'ヴィ': 'vi', 'ヴ': 'vu', 'ヴォ': 'vo', '
 //const katakana = {'ニャニィニュニェニョン': 'nyanixinyunyenyon', 'ジェットコースター': 'jettoko-suta-'};
 
 document.addEventListener('DOMContentLoaded', function() {
-    const correctPassword = '1234';  
+    const correctPassword = '0124';  
     let enteredPassword = prompt('マリカちゃんの仮名入力練習へようこそ！\n\nPassword ');
 
     if (enteredPassword !== correctPassword) {
