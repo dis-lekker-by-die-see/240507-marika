@@ -1,23 +1,27 @@
 
-const hiragana = {'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おおきい': 'ookii', 'かさ': 'kasa', 'きつね': 'kitsune', 'くま': 'kuma', 'けいたい': 'keitai', 'こねこ': 'koneko', 'さかな': 'sakana', 'しまうま': 'shimauma', 'すし': 'sushi', 'せんべい': 'senbei', 'そら': 'sora', 'たまご': 'tamago', 'ちず': 'chizu', 'つき': 'tsuki', 'てがみ': 'tegami', 'とんぼ': 'tonbo', 'なし': 'nashi', 'にわとり': 'niwatori', 'ぬいぐるみ': 'nuigurumi', 'ねっこ': 'nekko', 'のり': 'nori', 'はな': 'hana', 'ひつじ': 'hitsuji', 'ふね': 'fune', 'へび': 'hebi', 'ほし': 'hoshi', 'まど': 'mado', 'みかん': 'mikan', 'むし': 'mushi', 'めがね': 'megane', 'もも': 'momo', 'やま': 'yama', 'ゆき': 'yuki', 'よる': 'yoru', 'らっぱ': 'rappa', 'りんご': 'ringo', 'るすばん': 'rusuban', 'れっしゃ': 'ressha', 'ろうそく': 'rousoku', 'わに': 'wani', 'がっこう': 'gakkou', 'ぎんこう': 'ginkou', 'ぐみ': 'gumi', 'げんかん': 'genkan', 'ごはん': 'gohan', 'ざっし': 'zasshi', 'じてんしゃ': 'jitensha', 'ずぼん': 'zubon', 'ぜんぶ': 'zenbu', 'ぞう': 'zou', 'だいふく': 'daifuku', 'ちぢむ': 'chidimu', 'かんづめ': 'kandume', 'でんしゃ': 'densha', 'どうぐ': 'dougu', 'ばんごう': 'bangou', 'びじん': 'bijin', 'ぶた': 'buta', 'べんとう': 'bentou', 'ぼうし': 'boushi', 'ぱん': 'pan', 'ぴあの': 'piano', 'ぷりぷり': 'puripuri', 'ぺん': 'pen', 'ぽんかん': 'ponkan', 'きゃく': 'kyaku', 'きゅうり': 'kyuuri', 'きょうかしょ': 'kyoukasho', 'しゃしん': 'shashin', 'しゅくだい': 'shukudai', 'しょうがっこう': 'shougakkou', 'ちゃわん': 'chawan', 'ちゅうい': 'chuui', 'ちょうさ': 'chousa', 'にゃんこ': 'nyanko', 'にゅうがく': 'nyuugaku', 'にょうぼう': 'nyoubou', 'ひゃく': 'hyaku', 'ひゅうが': 'hyuuga', 'ひょうげん': 'hyougen', 'みゃくはく': 'myakuhaku', 'みゅうみゅう': 'myuumyuu', 'みょうじ': 'myouji', 'りゃん': 'ryan', 'りゅう': 'ryuu', 'りょうり': 'ryouri', 'ぎゃく': 'gyaku', 'ぎゅうにゅう': 'gyuunyuu', 'ぎょうざ': 'gyouza', 'じゃがいも': 'jagaimo', 'じゅうしょ': 'juusho', 'じょうず': 'jouzu', 'ぢゃ': 'dya', 'ぢゅ': 'dyu', 'ぢょ': 'dyo', 'びゃっこ': 'byakko', 'びゅうびゅう': 'byuubyuu', 'びょういん': 'byouin', 'ぴゃんぴゃん': 'pyanpyan', 'ぴゅうと': 'pyuuto', 'ぴょんぴょん': 'pyonpyon'};
+//const hiragana = {'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おおきい': 'ookii', 'かさ': 'kasa', 'きつね': 'kitsune', 'くま': 'kuma', 'けいたい': 'keitai', 'こねこ': 'koneko', 'さかな': 'sakana', 'しまうま': 'shimauma', 'すし': 'sushi', 'せんべい': 'senbei', 'そら': 'sora', 'たまご': 'tamago', 'ちず': 'chizu', 'つき': 'tsuki', 'てがみ': 'tegami', 'とんぼ': 'tonbo', 'なし': 'nashi', 'にわとり': 'niwatori', 'ぬいぐるみ': 'nuigurumi', 'ねっこ': 'nekko', 'のり': 'nori', 'はな': 'hana', 'ひつじ': 'hitsuji', 'ふね': 'fune', 'へび': 'hebi', 'ほし': 'hoshi', 'まど': 'mado', 'みかん': 'mikan', 'むし': 'mushi', 'めがね': 'megane', 'もも': 'momo', 'やま': 'yama', 'ゆき': 'yuki', 'よる': 'yoru', 'らっぱ': 'rappa', 'りんご': 'ringo', 'るすばん': 'rusuban', 'れっしゃ': 'ressha', 'ろうそく': 'rousoku', 'わに': 'wani', 'がっこう': 'gakkou', 'ぎんこう': 'ginkou', 'ぐみ': 'gumi', 'げんかん': 'genkan', 'ごはん': 'gohan', 'ざっし': 'zasshi', 'じてんしゃ': 'jitensha', 'ずぼん': 'zubon', 'ぜんぶ': 'zenbu', 'ぞう': 'zou', 'だいふく': 'daifuku', 'ちぢむ': 'chidimu', 'かんづめ': 'kandume', 'でんしゃ': 'densha', 'どうぐ': 'dougu', 'ばんごう': 'bangou', 'びじん': 'bijin', 'ぶた': 'buta', 'べんとう': 'bentou', 'ぼうし': 'boushi', 'ぱん': 'pan', 'ぴあの': 'piano', 'ぷりぷり': 'puripuri', 'ぺん': 'pen', 'ぽんかん': 'ponkan', 'きゃく': 'kyaku', 'きゅうり': 'kyuuri', 'きょうかしょ': 'kyoukasho', 'しゃしん': 'shashin', 'しゅくだい': 'shukudai', 'しょうがっこう': 'shougakkou', 'ちゃわん': 'chawan', 'ちゅうい': 'chuui', 'ちょうさ': 'chousa', 'にゃんこ': 'nyanko', 'にゅうがく': 'nyuugaku', 'にょうぼう': 'nyoubou', 'ひゃく': 'hyaku', 'ひゅうが': 'hyuuga', 'ひょうげん': 'hyougen', 'みゃくはく': 'myakuhaku', 'みゅうみゅう': 'myuumyuu', 'みょうじ': 'myouji', 'りゃん': 'ryan', 'りゅう': 'ryuu', 'りょうり': 'ryouri', 'ぎゃく': 'gyaku', 'ぎゅうにゅう': 'gyuunyuu', 'ぎょうざ': 'gyouza', 'じゃがいも': 'jagaimo', 'じゅうしょ': 'juusho', 'じょうず': 'jouzu', 'ぢゃ': 'dya', 'ぢゅ': 'dyu', 'ぢょ': 'dyo', 'びゃっこ': 'byakko', 'びゅうびゅう': 'byuubyuu', 'びょういん': 'byouin', 'ぴゃんぴゃん': 'pyanpyan', 'ぴゅうと': 'pyuuto', 'ぴょんぴょん': 'pyonpyon'};
 
-/*const hiragana = {
-    'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おにぎり': 'onigiri'
-};
-*/
-
+const hiragana = {'あめ': 'ame', 'いぬ': 'inu', 'うま': 'uma', 'えんぴつ': 'enpitsu', 'おにぎり': 'onigiri'};
+const katakana = {'アメリカ': 'amerika', 'ビール': 'bi-ru', 'コンピュータ': 'konpyu-ta', 'サービス': 'sa-bisu', 'テレビ': 'terebi', 'ドーナツ': 'do-natsu', 'ハンバーガー': 'hanba-ga-'};
 
 document.addEventListener('DOMContentLoaded', function() {
     const correctPassword = '1234';  
     let enteredPassword = prompt('Password > ');
 
     if (enteredPassword !== correctPassword) {
-        // alert('Incorrect password, access denied.');  // Optionally, you can redirect them or hide content
-        //document.body.innerHTML = '<h1>Access Denied</h1>';
-        window.location.reload(); // Reload the entire page
+        window.location.reload(); // Reload the page for invalid input
     } else {
-        document.getElementById('wrapper').style.display = 'flex'; // Only display the wrapper if the password is correct
-        setupGame(); // Only run setup if the password is correct
+
+        let choice = prompt('どっち？\n h (ひらがな)?  k (カタカナ)?');
+        if (choice.toLowerCase() === 'h') {
+            document.getElementById('wrapper').style.display = 'flex'; 
+            setupGame(hiragana);
+        } else if (choice.toLowerCase() === 'k') {
+            document.getElementById('wrapper').style.display = 'flex';
+            setupGame(katakana); 
+        } else {
+            window.location.reload(); // Reload the page for invalid input
+        }
     }
 });
 
@@ -25,9 +29,11 @@ let newRandomList = [];
 let originalListLength;
 let wrongCount = 0;
 let currentWord = '';
+let currentMap = {}; 
 
-function setupGame() {
-    newRandomList = shuffle(Object.keys(hiragana));
+function setupGame(characterMap) {
+    currentMap = characterMap;
+    newRandomList = shuffle(Object.keys(characterMap));
     originalListLength = newRandomList.length;
     displayNextWord();
     setupEnterKeySubmit();
@@ -48,7 +54,7 @@ function displayNextWord() {
         return;
     }
     currentWord = newRandomList.shift();
-    document.getElementById('hiraganaWord').textContent = currentWord;
+    document.getElementById('kanaWord').textContent = currentWord;
     document.getElementById('userInput').value = '';
     document.getElementById('userInput').focus();
     wrongCount = 0;
@@ -56,10 +62,9 @@ function displayNextWord() {
     updateProgress();
 }
 
-
 function checkAnswer() {
     const userInput = document.getElementById('userInput').value.trim().toLowerCase();
-    const correctReading = hiragana[currentWord];
+    const correctReading = currentMap[currentWord];
     const resultElement = document.getElementById('result');
 
     if (userInput === correctReading) {
@@ -67,7 +72,7 @@ function checkAnswer() {
         resultElement.style.color = 'black';
         setTimeout(() => {
             displayNextWord();
-            updateProgress();  // Update progress only when moving to the next word correctly
+            updateProgress();  
         }, 2400);
         
     } else {
@@ -78,12 +83,11 @@ function checkAnswer() {
             resultElement.style.color = 'green';
             setTimeout(() => {
                 displayNextWord();
-                updateProgress();  // Update progress only when finally moving past a word
+                updateProgress();  
             }, 2400);
            
         } else {
             resultElement.textContent = '⛔';
-            // Reinsert the current word into the list at an appropriate position
             let movePosition = (3 - wrongCount) * 3;
             if (newRandomList.length < movePosition) movePosition = newRandomList.length;
             newRandomList.splice(movePosition, 0, currentWord);
@@ -95,7 +99,6 @@ function checkAnswer() {
     setTimeout(() => {
         resultElement.style.opacity = '0';
         resultElement.style.visibility = 'hidden';
-        // Clear the input for the next attempt or word
         document.getElementById('userInput').value = '';
         document.getElementById('userInput').focus();
     }, 2400);
@@ -116,7 +119,7 @@ function setupEnterKeySubmit() {
     const input = document.getElementById('userInput');
     input.addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
             checkAnswer();
         }
     });
