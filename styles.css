@@ -55,7 +55,7 @@ body {
     padding: 10px;
     display: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 360px; /* Maximum width of the container */
+    max-width: 550px; /* Maximum width of the container */
     width: 100%; /* Makes the width responsive */
     margin-right: 5%;
     border-radius: 3%;
@@ -135,7 +135,7 @@ p {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 750px) {
     #content {
-        max-width: 250px;
+        max-width: 270px;
     }
     h1 {
         font-size: 1.5em; /* Smaller font size on small devices */
